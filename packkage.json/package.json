@@ -1,0 +1,19 @@
+{
+  "name": "packkage.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init-project": "npm install && npm run init:dirs && npm run init:files && npm run init:gitignore",
+
+    "watch": "npm-run-all build:* build-dev -p watch",
+    "watch:browsersync": "browser-sync start --server --files \"css/*.css"\"*.html\"",
+    "watch:sassprefixer": "onchange sass/*.sass -- npm run build-dev"
+
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
